@@ -6,7 +6,7 @@ import Register from "./pages/Register";
 // all the routes..
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <Home />,
   },
   {
@@ -27,3 +27,4 @@ const App = () => {
 };
 
 export default App;
+// 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
