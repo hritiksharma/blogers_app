@@ -1,13 +1,48 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Outlet,
+} from "react-router-dom";
+import "./style.scss";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Single from "./pages/Single";
+import Write from "./pages/Write";
 // all the routes..
+
+const Layout = () => {
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
+  );
+};
+
 const router = createBrowserRouter([
   {
-    path: "/home",
-    element: <Home />,
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/post/:id",
+        element: <Single />,
+      },
+      {
+        path: "/write",
+        element: <Write />,
+      },
+    ],
   },
   {
     path: "/login",
@@ -20,10 +55,13 @@ const router = createBrowserRouter([
 ]);
 const App = () => {
   return (
-    <div>
-      <RouterProvider router={router} />
+    <div className="app">
+      <div className="container">
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 };
 
 export default App;
+// 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
