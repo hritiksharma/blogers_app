@@ -6,7 +6,11 @@ $lightGreen : #b9e7e7;
     justify-content: center;
     .container{
         width: 1024px;
-
+       
+    .link {
+        text-decoration: none;
+        color: inherit;
+      }
     //   LOGIN & REGISTER 
 
     .auth{
@@ -62,12 +66,96 @@ $lightGreen : #b9e7e7;
     // NAVBAR 
     .navbar {
         .container{
+
             padding: 10px 0px;
             display: flex;
+            align-items: center;
+            // flex-direction: row;
             justify-content: space-between;
-            .logo{}
-            .links{}
+            .logo{
+               img{
+                width: 120px;
+               }
+
+            }
+            .links{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                h6{
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+               
+                span{
+                    cursor: pointer;
+                
+                }
+                .write{
+                    background-color: $lightGreen;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 300;
+                    border: 1px solid white;
+
+                    &:hover{
+                        color: teal;
+                        background-color: white;
+                        border: 1px solid teal;   
+                    }
+
+                }
+
+            }
         }
     }
+
+    //Home 
+    .home{
+        .posts{
+         margin-top: 50px;
+         display: flex;
+         flex-direction: column;
+         gap: 150px;
+            .post{
+                display: flex;
+                gap: 100px;
+            .img{
+                flex: 2;
+                img{
+                width: 100%;
+                max-height: 400px;
+                object-fit: cover;
+                }
+            }
+
+            .content{
+             flex: 3;
+            }
+        }
+        }
+    }
+
+
+    // FOOTER 
+
+    footer {
+        margin-top: 100px;
+        padding:20px ;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        justify-content:space-between;
+        background-color: $lightGreen;
+        img{
+            height: 50px;
+        }
+    }
+
     }
 }
