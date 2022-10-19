@@ -82,7 +82,7 @@ $lightGreen : #b9e7e7;
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                
+
                 h6{
                     font-size: 16px;
                     font-weight: 300;
@@ -114,6 +114,34 @@ $lightGreen : #b9e7e7;
             }
         }
     }
+
+    //Home 
+    .home{
+        .posts{
+         margin-top: 50px;
+         display: flex;
+         flex-direction: column;
+         gap: 150px;
+            .post{
+                display: flex;
+                gap: 100px;
+            .img{
+                flex: 2;
+                img{
+                width: 100%;
+                max-height: 400px;
+                object-fit: cover;
+                }
+            }
+
+            .content{
+             flex: 3;
+            }
+        }
+        }
+    }
+
+
     // FOOTER 
 
     footer {
