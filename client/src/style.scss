@@ -183,6 +183,18 @@ $lightGreen : #b9e7e7;
         }
     }
 
+    .single{
+        display: flex;
+        gap: 50px;
+
+        .content{
+            flex: 5;
+        }
+        
+        .menu{
+            flex: 2;
+        }
+    }
 
     // FOOTER 
 
