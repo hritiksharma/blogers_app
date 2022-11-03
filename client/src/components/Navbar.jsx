@@ -11,22 +11,22 @@ const Navbar = () => {
         </div>
         <div className="links">
           <Link className="link">
-            <h6>ART</h6>
+            <h6>Art</h6>
           </Link>
           <Link className="link">
-            <h6>SCIENCE</h6>
+            <h6>Education</h6>
           </Link>
           <Link className="link">
-            <h6>TECHNOLOGY</h6>
+            <h6>ChildLabour</h6>
           </Link>
           <Link className="link">
-            <h6>CINEMA</h6>
+            <h6>WomenEmp</h6>
           </Link>
           <Link className="link">
-            <h6>DESIGN</h6>
+            <h6>Health</h6>
           </Link>
           <Link className="link">
-            <h6>FOOD</h6>
+            <h6>Social</h6>
           </Link>
 
           <span>
