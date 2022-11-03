@@ -27,7 +27,9 @@ const Write = () => {
             <b>Visibility</b>Public
           </span>
           <input style={{ display: "none" }} type="file" id="file" name="" />
-          <label htmlFor="file">Upload Image</label>
+          <label className="file" htmlFor="file">
+            Upload Image
+          </label>
 
           <div className="buttons">
             <button>Save as a drafts</button>
@@ -36,18 +38,35 @@ const Write = () => {
         </div>
         <div className="item">
           <h1>Category</h1>
-          <input type="radio" name="cat" value="art" id="art" />
-          <label htmlFor="art">Art</label>
-          <input type="radio" name="cat" value="education" id="education" />
-          <label htmlFor="education">Education</label>
-          <input type="radio" name="cat" value="childLabour" id="childLabour" />
-          <label htmlFor="childLabour">Child Labour</label>
-          <input type="radio" name="cat" value="womeneEmp" id="womenEmp" />
-          <label htmlFor="art">WomenEmp</label>
-          <input type="radio" name="cat" value="health" id="health" />
-          <label htmlFor="health">Health</label>
-          <input type="radio" name="cat" value="social" id="social" />
-          <label htmlFor="social">Social</label>
+          <div className="cat">
+            <input type="radio" name="cat" value="art" id="art" />
+            <label htmlFor="art">Art</label>
+          </div>
+          <div className="cat">
+            <input type="radio" name="cat" value="education" id="education" />
+            <label htmlFor="education">Education</label>
+          </div>
+          <div className="cat">
+            <input
+              type="radio"
+              name="cat"
+              value="childLabour"
+              id="childLabour"
+            />
+            <label htmlFor="childLabour">Child Labour</label>
+          </div>
+          <div className="cat">
+            <input type="radio" name="cat" value="womeneEmp" id="womenEmp" />
+            <label htmlFor="art">WomenEmp</label>
+          </div>
+          <div className="cat">
+            <input type="radio" name="cat" value="health" id="health" />
+            <label htmlFor="health">Health</label>
+          </div>
+          <div className="cat">
+            <input type="radio" name="cat" value="social" id="social" />
+            <label htmlFor="social">Social</label>
+          </div>
         </div>
       </div>
     </div>
